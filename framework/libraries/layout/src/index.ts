@@ -1,5 +1,4 @@
 import React from "react";
-import { Group, Panel, Separator } from "react-resizable-panels";
 
 import { cn } from "@platform/ui";
 
@@ -40,16 +39,15 @@ export function SplitPanelLayout(props: {
   right: React.ReactNode;
 }) {
   return React.createElement(
-    Group,
+    "div",
     {
-      orientation: "horizontal",
       className: "awb-builder-host",
       id: "split-panel-layout"
     },
-    React.createElement(Panel, { defaultSize: 22, minSize: 16 }, props.left),
-    React.createElement(Separator, { className: "awb-builder-divider" }),
-    React.createElement(Panel, { defaultSize: 52, minSize: 32 }, props.center),
-    React.createElement(Separator, { className: "awb-builder-divider" }),
-    React.createElement(Panel, { defaultSize: 26, minSize: 18 }, props.right)
+    React.createElement("section", { className: "awb-builder-column awb-builder-column-left" }, props.left),
+    React.createElement("div", { className: "awb-builder-divider", "aria-hidden": true }),
+    React.createElement("section", { className: "awb-builder-column awb-builder-column-center" }, props.center),
+    React.createElement("div", { className: "awb-builder-divider", "aria-hidden": true }),
+    React.createElement("section", { className: "awb-builder-column awb-builder-column-right" }, props.right)
   );
 }
