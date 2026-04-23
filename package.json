@@ -6,11 +6,11 @@
     "framework/libraries/*"
   ],
   "scripts": {
-    "build": "bun --cwd framework/libraries/layout run build",
-    "typecheck": "bun --cwd framework/libraries/layout run typecheck",
-    "lint": "bun --cwd framework/libraries/layout run lint",
-    "test": "bun --cwd framework/libraries/layout run test",
-    "test:unit": "bun --cwd framework/libraries/layout run test:unit",
+    "build": "bun run --cwd framework/libraries/layout build",
+    "typecheck": "bun run --cwd framework/libraries/layout typecheck",
+    "lint": "bun run --cwd framework/libraries/layout lint",
+    "test": "bun run --cwd framework/libraries/layout test",
+    "test:unit": "bun run --cwd framework/libraries/layout test:unit",
     "docs:summary": "node scripts/docs-summary.mjs",
     "docs:check": "node scripts/docs-check.mjs"
   }

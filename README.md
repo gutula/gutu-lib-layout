@@ -45,6 +45,7 @@ Why this tier:
 | --- | --- |
 | Package ID | `layout` |
 | Import Name | `@platform/layout` |
+| Canonical Namespace Target | `@gutu/layout` |
 | UI Surface | Mixed runtime helpers |
 | Consumption Model | Imports + typed UI primitives |
 | Verification | Build+Typecheck+Lint+Test |
@@ -54,10 +55,18 @@ Why this tier:
 | Field | Value |
 | --- | --- |
 | Package Name | `@platform/layout` |
+| Canonical Namespace Target | `@gutu/layout` |
+| Legacy Compatibility IDs | `@platform/layout` |
 | Direct Dependencies | `@platform/ui`, `react`, `react-resizable-panels` |
 | Peer Dependencies | None |
 | React Runtime | Yes |
 | Workspace Requirement | Compatible Gutu workspace required |
+
+## Namespace Policy
+
+- `@gutu/*` is the canonical public framework namespace for new work.
+- This repo currently publishes `@platform/layout` as the legacy compatibility package id while the migration to `@gutu/layout` is completed.
+- Catalog metadata carries the canonical target id so dashboards, docs, and future tooling can present one uniform Gutu namespace without breaking current consumers.
 
 ## Capability Matrix
 

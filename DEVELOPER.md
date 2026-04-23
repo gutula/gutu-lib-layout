@@ -35,6 +35,7 @@ Provides shared layout primitives so apps and surfaces can compose consistent sp
 | Package ID | `layout` |
 | Display Name | Layout |
 | Import Name | `@platform/layout` |
+| Canonical Namespace Target | `@gutu/layout` |
 | Version | `0.1.0` |
 | UI Surface | Mixed runtime helpers |
 | Consumption Model | Imports + typed UI primitives |
@@ -48,6 +49,7 @@ Provides shared layout primitives so apps and surfaces can compose consistent sp
 | Dev Dependencies | None |
 | React Runtime | Yes |
 | Workspace Scoped | Yes |
+| Legacy Compatibility IDs | `@platform/layout` |
 
 ### Dependency interpretation
 

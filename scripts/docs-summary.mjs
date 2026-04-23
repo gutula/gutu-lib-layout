@@ -3,6 +3,7 @@ const summary = {
   "repoName": "gutu-lib-layout",
   "packageId": "layout",
   "displayName": "Layout",
+  "packageCount": 1,
   "group": "UI Foundation",
   "maturity": "Baseline",
   "description": "Canonical layout primitives for workspace shells, dashboards, and builder splits.",
